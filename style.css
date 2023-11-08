@@ -4,13 +4,27 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+:root {
+  --darkBackground: #191919;
+}
+.dark-theme {
+  --darkBackground: #e5d9d9d3;
+}
 html {
   font-size: 62.5%;
 }
 
 body {
-  background: #191919;
-  /* overflow-x: hidden; */
+  background: var(--darkBackground);
+
+  position: relative;
+  height: 100vh;
+}
+.theme-icon {
+  position: absolute;
+  width: 4rem;
+  top: -5rem;
+  right: 1rem;
 }
 .gellery {
   width: 90rem;
